@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psesdo selectors and designing</title>
+    <style>
+        .container{
+            border: 2px solid red;
+            background-color: rosybrown;
+            padding: 35px;
+            margin: auto;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            color: rgb(80, 6, 6);
+            background-color: cadetblue;
+        }
+        a:visited{
+            color: darkblue;
+        }
+        a:active{
+            background-color: darkred;
+        }
+        .btn{
+            background-color: silver;
+            padding: 6px;
+            border: none;
+            cursor: pointer;
+            font-size: 15px;
+            border-radius: 4px;
+            font: italic ,large ,bold;
+
+        }
+        btn:hover{
+            color: deeppink;
+        }
+    </style>
+</head>
+<body>
+    <div id="conti" class="container">
+        <h3>this is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur accusamus asperiores nemo minus suscipit commodi alias iusto qui placeat unde sit similique non repellendus excepturi optio voluptas laudantium, voluptates veniam?</p>
+
+        <a href="https://www.google.com" class="btn" target="_blank">read more</a>
+        <button class="btn"> Contact us</button>
+    </div>    
+</body>
+</html>
