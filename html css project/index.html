@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fit fitness</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Merriweather', serif;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('imgs/boxer-1984344_1920.jpg');
+
+        }
+
+        .left {
+            position: absolute;
+            left: 40px;
+            top: 20px;
+            border: 3px solid red;
+            display: inline-block;
+
+        }
+
+        .mid {
+            display: block;
+            width: 40%;
+            margin: 20px auto;
+            border: 3px solid green;
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 36px;
+            border: 3px solid blue;
+            display: inline-block;
+        }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 20px;
+        }
+
+        .navbar li a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 25px 15px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: grey;
+        }
+
+        .left img {
+            width: 100px;
+        }
+
+        .left div {
+            text-align: center;
+            line-height: 20px;
+            font-size: 20px;
+        }
+
+        .btn {
+            font-family: 'Merriweather', serif;
+            margin: 0px 5px;
+            color: whitesmoke;
+            background-color: black;
+            padding: 4px 14px;
+            border: 1px solid grey;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 16px;
+
+        }
+
+        .btn:hover {
+            background-color: rgb(104, 104, 104);
+        }
+
+        .container {
+            border: 1px solid whitesmoke;
+            margin: 106px 80px;
+            padding: 75px;
+            width: 40%;
+            border-radius: 28px;
+
+        }
+
+        .formg input {
+            font-family: 'Merriweather', serif;
+            text-align: center;
+            display: block;
+            width: 590px;
+            padding: 2px;
+            border: 1px solid black;
+            margin: 11px;
+            font-size: 17px;
+            border-radius: 35px;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            width: 23%;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="imgs\one-fit_logo.png" alt="">
+            <div>FIT</div>
+        </div>
+
+
+        <div class="mid">
+
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">something</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <button class="btn">call me</button>
+
+            <button class="btn">email me</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>fitness</h1>
+        <form action="  ">
+            <div class="formg">
+                <input type="text" name="" placeholder="Enter Name">
+            </div>
+            <div class="formg">
+                <input type="text" name="" placeholder="Enter Address">
+            </div>
+            <div class="formg">
+                <input type="text" name="" placeholder="Enter Contact">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
