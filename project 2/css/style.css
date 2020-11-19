@@ -1,0 +1,134 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* css variables */
+
+#navbar{
+    display: flex;
+    align-items: center;
+    font-family: 'Merriweather', serif;
+    position: relative;
+
+}
+/* logo */
+#logo{
+        margin: 8px 10px;
+}
+#logo img{
+    margin: 8px 10px;
+    height: 40px;
+}
+
+/* list item */
+
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute; 
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .5;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+
+#navbar ul li {
+ 
+    list-style: none;
+    font-size: medium;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 10px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: blanchedalmond;
+}
+
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 623px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    background: url('../bg.png') no-repeat center/cover;
+    position: absolute; 
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+#home h1{
+    color: wheat;
+    text-align: center;
+    
+
+}
+#home p{
+    color: wheat;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Merriweather', serif;
+
+}
+/* skills */
+#skills{
+    margin: 34px;
+    display: flex;
+}
+#skills .box{
+    border: 2px solid brown;
+    margin: 3px;
+    padding: 6px;
+    background-color: rgb(214, 193, 193);
+    border-radius: 23px;
+}
+#skills .box img{
+    height: 80px;
+    margin: auto;
+    display: block;
+}
+#skills{}
+
+/* utility class */
+.hprime{
+    font-size: 5rem;
+    padding: 14px;
+
+}
+
+.hsecond{
+    text-align: center;
+    font-size: 4rem;
+    padding: 14px;
+}
+.btn{
+    padding: 6px 18px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: brown;
+    color: wheat;
+    margin: 16px ;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
