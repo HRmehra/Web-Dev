@@ -1,0 +1,48 @@
+/* navigation */
+#navbar {
+    flex-direction: column;
+}
+#navbar ul li a{
+    padding-bottom: 6px;
+}
+    
+/* home */
+
+#home{
+    padding: 0px 0px;
+    height: 425px;
+}
+
+#home::before{
+    height: 80%;
+}
+
+#home p{
+    font-size: 18px;
+}
+
+/* skills */
+#skills{
+    flex-direction: column;
+}
+
+}
+#skills .box{
+   
+}
+
+/* contact */
+#contact-box form{
+    width: 80%;
+}
+
+/* utility */
+.hprime{
+    font-size: 26px;
+    padding: 2px 25px;
+
+}
+.btn{
+    font-size: 1.2rem ;
+    padding: 4px 8px;
+}

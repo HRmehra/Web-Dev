@@ -3,13 +3,17 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 /* css variables */
 
 #navbar{
     display: flex;
     align-items: center;
     font-family: 'Merriweather', serif;
-    position: relative;
+    position: sticky;
+    top: 0px;
 
 }
 /* logo */
@@ -28,6 +32,8 @@
     content: "";
     background-color: black;
     position: absolute; 
+    top: 0px;
+    left: 0px;
     height: 100%;
     width: 100%;
     z-index: -1;
@@ -61,7 +67,7 @@
     display: flex;
     flex-direction: column;
     padding: 3px 200px;
-    height: 623px;
+    height: 550px;
     justify-content: center;
     align-items: center;
 }
@@ -70,7 +76,9 @@
     content: "";
     background: url('../bg.png') no-repeat center/cover;
     position: absolute; 
-    height: 100%;
+    top: 0px;
+    left: 0px;
+    height: 84%;
     width: 100%;
     z-index: -1;
     opacity: .6;
@@ -88,14 +96,18 @@
     font-family: 'Merriweather', serif;
 
 }
+
 /* skills */
 #skills{
     margin: 34px;
     display: flex;
+
 }
+
+
 #skills .box{
     border: 2px solid brown;
-    margin: 3px;
+    margin: 6px;
     padding: 6px;
     background-color: rgb(214, 193, 193);
     border-radius: 23px;
@@ -105,19 +117,69 @@
     margin: auto;
     display: block;
 }
-#skills{}
+#skills .box p{
+    font-family: 'Merriweather', serif;
+   
+}
+/* contact srction */
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+    background: url('../3.png')no-repeat center center/cover;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px ;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+
+#contact-box form{
+   
+    width: 40%;
+
+}
+#contact-box label{
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Merriweather', serif;
+}
+footer{
+    background: black;
+    color: whitesmoke;
+    padding: 9px 20px;
+
+}
 
 /* utility class */
 .hprime{
-    font-size: 5rem;
+    font-family: 'Merriweather', serif;
+    font-size: 3.8rem;
     padding: 14px;
 
 }
 
 .hsecond{
+    font-family: 'Merriweather', serif;
+    font-size: 2.3rem;
+    padding: 12px;
     text-align: center;
-    font-size: 4rem;
-    padding: 14px;
+   
 }
 .btn{
     padding: 6px 18px;
@@ -131,4 +193,5 @@
 }
 .center{
     text-align: center;
+    
 }
