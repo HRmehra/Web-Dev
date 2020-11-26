@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<style>
+    #btn{
+        padding: 10px 34px;
+        background-color: red;
+        border: 2px solid black;
+        color: blanchedalmond;
+        font-weight: bold;
+        border-radius: 8px;
+        cursor: pointer;
+    }  
+</style>
+<body>
+    <div>
+        <p id="par">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic possimus ipsam qui molestias consequuntur porro, modi quaerat, eligendi fuga cupiditate quidem illo quia itaque aspernatur iusto quod quo. Ea, perspiciatis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi ea assumenda beatae, tempora porro illum repudiandae ullam vel fugiat aliquam repellat, pariatur quo ipsa. Ipsa est quaerat repellat optio nulla, sunt consequatur iusto error temporibus, itaque autem! Odio exercitationem natus ipsum quidem excepturi modi sequi accusamus, dolore minus odit harum, fuga mollitia, sit dolorum laboriosam rerum totam eos aliquam nobis omnis. Porro quod doloribus corporis optio?
+        </p>
+        <button id="btn" onclick="togglehide()">show/hide</button>
+    </div>
+
+    <script>
+
+        let par =document.getElementById('par');
+        par.addEventListener('mouseover',function run(){
+            alert('mouse inside')
+        })
+
+        par.addEventListener('mouseout',function run(){
+            alert('mouse outside')
+        })
+
+
+
+        function togglehide(){
+            //  let btn= document.getElementById('btn');
+            //   let par =document.getElementById('par');
+              if (par.style.display !='none') {
+                par.style.display = "none";
+                  
+              } else {
+                  
+              
+              par.style.display = "block";
+              }
+        }
+
+    </script>
+    
+</body>
+</html>

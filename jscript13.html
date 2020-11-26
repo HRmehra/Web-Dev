@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>json practice</title>
+</head>
+<body>
+    <div class="container">
+        this is a container
+    </div>
+
+    <script>
+
+        let json={
+            name:"russell",
+            branch:"cse",
+            year:"fourth",
+            yes:"no",
+        }
+        console.log(json);
+
+        let jsonstr = JSON.stringify(json);
+        console.log(jsonstr);
+
+
+        jsonstr = jsonstr.replace('russell','hussel')
+        console.log(jsonstr);
+
+
+        newjson =JSON.parse(jsonstr);
+        console.log(newjson);
+    </script>
+    
+</body>
+</html>

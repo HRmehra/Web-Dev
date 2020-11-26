@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom manipulation</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>home</li>
+            <li>about me</li>
+            <li>contact us</li>
+            <li>skills</li>
+            <li>about us</li>
+        </ul>
+    </div>
+    <div class="container">
+        this is another conatiner
+    </div>
+
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+
+        let nav = document.getElementById('nav');
+        console.log(nav);
+
+        let container =document.getElementsByClassName('container');
+        console.log(container);
+
+        let sel = document.querySelector('.container');
+        console.log("selector returns", sel);
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow functions</title>
+</head>
+<body>
+    <div class="container">
+        this is arrow functions
+    </div>
+    <script>
+        //arrow function same as other function commented out 
+
+        // function greet(){
+        //     console.log('good morning');
+        // }
+        greet = ()=> {
+            console.log('good morning');
+        }
+        greet();
+
+        // let sum = (a,b)=> {
+        //     return a+b;
+        // }
+
+        let sum =(a,b)=> a+b;
+
+        let half =(a)=> a/2;
+
+        setTimeout(() => {
+            console.log('inside set time out');
+            
+        }, 3000);
+
+        let obj={
+            greet:'good morning',
+            name:['russell','mehra','why','how'],
+            speak(){
+                this.name.forEach((people)=>{
+                    console.log(this.greet +'hey teacher leaves the kids alone '+people);
+                }
+                )
+            }
+
+        }
+        //this in a fuction with arrow function can point to function outside the fuction .lexical this
+        obj.speak();
+    </script>
+</body>
+</html>

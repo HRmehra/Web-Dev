@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>script settime nd clear timeout</title>
+</head>
+<body>
+    <div class="container">
+        this is a container
+
+        time now is <span id="time"></span>
+    </div>
+    
+    <script>
+        console.log('this is a practice file');
+        //settimeout allows us to run fuction once after some time
+        //cleartimeout allows to run function repeatedly after interval of time
+        
+        function greet(name , time) {
+            
+            console.log("hello how are we " + name + " "+time);
+
+        }
+
+        // setTimeout(greet ,5000 ,'God','eternal');
+        // timeout = setTimeout(greet ,5000 ,'God','eternal');
+        // console.log(timeout);
+
+        // clearTimeout(timeout)
+
+        // intervaliD = setInterval(greet, 1000,'god', 'eternal')
+        // clearInterval(intervaliD);
+
+        function timeshow(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML=time;
+
+        }
+        setInterval(timeshow ,1000)
+    </script>
+</body>
+</html>

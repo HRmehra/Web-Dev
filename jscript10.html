@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>date and time</title>
+</head>
+<style>
+    .container {
+        font-size: 23px;
+        background-color: grey;
+        border: 4px solid black;
+        padding: 34px;
+        margin: 4px;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        this is a container
+        current time is <span id="time"></span>
+    </div>
+    <script>
+        console.log("this is for learning date and time");
+        let now = new Date();
+        console.log(now)
+
+        //newdate =new Date("2020-11-26");
+        //console.log(newdate)
+
+        //newdate =new date(year month date hou min sec milisec)
+        newdate = new Date(2030, 4, 5, 6, 7, 2, 4);
+        console.log(newdate)
+
+        setInterval(updatetime, 1000);
+
+        function updatetime() {
+            time.innerHTML = new Date();
+
+        }
+    </script>
+</body>
+
+</html>
