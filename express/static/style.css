@@ -1,0 +1,79 @@
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+body::before{
+    opacity: 0.5;
+    content: "";
+    width: 100%;
+    height: 600%;
+    z-index: -1;
+    top: 0px;
+    position: absolute;
+    background: url('/practice/express/static/on.jpg') no-repeat center center;
+
+}
+nav{
+    background-color: grey;
+    padding: 12px;
+
+}
+ul{
+    display: flex;
+    flex-direction: row;
+
+}
+li{
+    list-style: none;
+    padding: 3px 14px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font: bold;
+}
+h1{
+    text-align: center;
+}
+.container{
+    margin: 12px , auto;
+    text-align: center;
+    align-items: center;
+   
+    
+}
+input{
+    display: block;
+    padding: 23px;
+    margin: 15px 15px;
+    width: 60%;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 2px;
+
+}
+textarea{
+    display: block;
+    padding: 23px;
+    margin: 15px 15px;
+    width: 60%;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+   
+}
+.btn{
+    margin: 4px auto;
+    display: block;
+    padding: 5px 12px;
+    background: gray;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 9px;
+    cursor: pointer;
+    outline: none;
+  
+}

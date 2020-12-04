@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    style
+        include ../static/style.css
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">home</a></li>
+            <li><a href="/">about</a></li>
+            <li><a href="/">contact</a></li>
+            
+        </ul>
+    </nav>
+    <div class="container">
+
+        <h1>This is Heading </h1>
+        //- <!-- <p>
+        //-     | #{content}
+        //-     | <!-- this is a plain html use in pug -->
+        //- <!-- p> --> 
+        <form action="/" method="POST" id=contact>
+            <input type="text" name="name" placeholder="enter the name">
+            <input type="text" name="age" placeholder="enter the age">
+            <input type="text" name="number" placeholder="enter the number">
+            <textarea name="address" id="address" cols="30" rows="10" placeholder="enter the address"></textarea>
+            <textarea name="more" id="more" cols="30" rows="10" placeholder="tell us more"></textarea>
+
+            <button class="btn"> submit</button>
+        </form>
+    </div>
+</body>
+</html>
