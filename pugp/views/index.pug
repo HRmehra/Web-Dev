@@ -1,0 +1,52 @@
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul
+           div#logo
+            img(src="../static/logo.jpeg")
+            li #[a Home]
+            li #[a About]
+            li #[a Services]
+            li #[a Info]
+            li #[a Contact us]
+
+    section#introsec
+        div Welcome to some place
+        div.small This Place
+
+    section#goals
+       h2 goals
+       div.card
+        h3 This is something
+        div.card-box
+            div.card-img
+                img(src="../static/1.png")
+            div.card-content
+                p This gets something right
+       div.card
+        h3 This is also something
+         div.card-box
+            div.card-img
+                img(src="../static/2.jpg")
+            div.card-content
+                p This gets something right
+       div.card
+        h3 This is again something
+         div.card-box
+            div.card-img
+                img(src="../static/3.png")
+            div.card-content
+                p This gets something right
+
+    
+
+    footer#footer
+        div#center
+            copywrite &copy; 2020, its all mine.
+           
+    script
+      include ../static/index.js
