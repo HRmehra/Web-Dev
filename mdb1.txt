@@ -1,0 +1,23 @@
+//inserting in mongo db
+use russ 
+db.items.insertone({name:"someething",age:23,sername:"asdsf"})
+
+//seraching for data
+db.items.find({age:34})
+//this will return row with age 34
+
+// gte= greater then equal to
+ db.items.find({age:{$gte:23}})
+
+
+ db.items.find({age:{$gte:23},price:{$gte:3434}})
+
+
+ //or 
+ db.items.find({
+     $or:[{age:{$gte:23},price:{$gte:3434}}]
+})
+//only shows age
+db.items.find({age:{$gte:23}},{age:1})
+
+db.items.insert({"name":"blBL","age":27,"sername":"kaa","mid":"jj"})
