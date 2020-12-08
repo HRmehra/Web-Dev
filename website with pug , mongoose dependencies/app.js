@@ -1,7 +1,6 @@
 const express =require("express");
 const path =require("path");
 const app =express();
-const bodyparser = require('body-parser');
 const mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/contact', {useNewUrlParser: true , useUnifiedTopology: true});
 const port =80;
