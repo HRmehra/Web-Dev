@@ -12,8 +12,10 @@ con.on('open', ()=>{
     console.log('connected....');
 })
 
-const pepRouter =require('./routes/pep')
-use.app('../pep',pepRouter)
+app.use(express.json())
+
+const pepRouter =require('./routes/peps')
+app.use('/peps',pepRouter)
 
 app.listen(port ,()=>{
     console.log(`the app started successfuly on port${port}`);
