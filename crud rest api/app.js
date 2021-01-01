@@ -19,4 +19,5 @@ app.use('/peps',pepRouter)
 
 app.listen(port ,()=>{
     console.log(`the app started successfuly on port${port}`);
+    console.log("connected properly");
 })
